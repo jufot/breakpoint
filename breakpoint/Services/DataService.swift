@@ -56,7 +56,24 @@ class DataService {
         }
     }
     
-    
+    //Func to pass the data that we download
+    func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
+        var messageArray = [Message]()
+        //Observe a single event, when it's called every message will be downloaded
+        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnaphot) in
+            guard let feedMessageSnaphot = feedMessageSnaphot.children.allObjects as? [DataSnapshot] else { return }
+            
+            //Pull out content from the senderId, create a message object, and then append it to array
+            for message in feedMessageSnaphot {
+                let content = message.childSnapshot(forPath: "content").value as? String ?? "" //fetching message value from the Firebase database
+                let senderId = message.childSnapshot(forPath: "senderID").value as? String ?? "" //fetching senderId value from the Firebase database
+                let message = Message(content: content, senderId: senderId)
+                messageArray.append(message)
+            }
+            
+            handler(messageArray) //call handler and pass in messageArray (result after the for loop ends)
+        }
+    }
     
     
 }

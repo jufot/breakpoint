@@ -11,6 +11,8 @@
 		222E014623159B6D00DD350F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E014523159B6D00DD350F /* LoginVC.swift */; };
 		222E014823159BC500DD350F /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E014723159BC500DD350F /* InsetTextField.swift */; };
 		222E014A2315A70400DD350F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E01492315A70400DD350F /* ShadowView.swift */; };
+		22364158233D4E9900BA4F34 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22364157233D4E9800BA4F34 /* UIViewExt.swift */; };
+		223C9318233EE53000DAE716 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C9317233EE53000DAE716 /* FeedCell.swift */; };
 		227672F023047AD900CFC69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227672EF23047AD900CFC69C /* AppDelegate.swift */; };
 		227672F223047AD900CFC69C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227672F123047AD900CFC69C /* FeedVC.swift */; };
 		227672F423047AD900CFC69C /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227672F323047AD900CFC69C /* GroupsVC.swift */; };
@@ -20,6 +22,7 @@
 		227673092304804B00CFC69C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227673082304803D00CFC69C /* GoogleService-Info.plist */; };
 		2276730C230488DC00CFC69C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2276730B230488DC00CFC69C /* DataService.swift */; };
 		22C386F32321652900268D8E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C386F22321652900268D8E /* AuthService.swift */; };
+		22C48723233EF1EE00186E88 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48722233EF1EE00186E88 /* Message.swift */; };
 		22D870A02322F2710024DFA1 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D8709F2322F2710024DFA1 /* MeVC.swift */; };
 		22D870A22322F9C30024DFA1 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D870A12322F9C30024DFA1 /* CreatePostVC.swift */; };
 		AD2EA78F7ED3FD84E11F25C8 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15930DCDD190C7562DCBA448 /* Pods_breakpoint.framework */; };
@@ -31,6 +34,8 @@
 		222E014523159B6D00DD350F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		222E014723159BC500DD350F /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		222E01492315A70400DD350F /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		22364157233D4E9800BA4F34 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		223C9317233EE53000DAE716 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		227672EC23047AD800CFC69C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227672EF23047AD900CFC69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		227672F123047AD900CFC69C /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		227673082304803D00CFC69C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2276730B230488DC00CFC69C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		22C386F22321652900268D8E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		22C48722233EF1EE00186E88 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		22D8709F2322F2710024DFA1 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		22D870A12322F9C30024DFA1 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		5FE75E40B010B0DBA7F8FB06 /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			children = (
 				222E014723159BC500DD350F /* InsetTextField.swift */,
 				222E01492315A70400DD350F /* ShadowView.swift */,
+				223C9317233EE53000DAE716 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 		2276730523047BA300CFC69C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22C48722233EF1EE00186E88 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 		2276730623047CA100CFC69C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				22364157233D4E9800BA4F34 /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22364158233D4E9900BA4F34 /* UIViewExt.swift in Sources */,
+				223C9318233EE53000DAE716 /* FeedCell.swift in Sources */,
 				22D870A02322F2710024DFA1 /* MeVC.swift in Sources */,
 				222E014423159B2000DD350F /* AuthVC.swift in Sources */,
 				227672F423047AD900CFC69C /* GroupsVC.swift in Sources */,
@@ -304,6 +315,7 @@
 				227672F223047AD900CFC69C /* FeedVC.swift in Sources */,
 				222E014823159BC500DD350F /* InsetTextField.swift in Sources */,
 				2276730C230488DC00CFC69C /* DataService.swift in Sources */,
+				22C48723233EF1EE00186E88 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
